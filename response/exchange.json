@@ -1,0 +1,93 @@
+{
+  "success": true,
+  "message": "Exchange order created successfully",
+  "oldOrder": {
+    "address": {
+      "houseNumber": "3240",
+      "street": "33 feet road",
+      "landmark": "pal general store",
+      "city": "Ludhiana",
+      "state": "punjab",
+      "country": "India",
+      "pincode": "141016"
+    },
+    "cancelled": {
+      "status": false
+    },
+    "wasExchanged": {
+      "status": false
+    },
+    "exchanged": {
+      "status": "initiated",
+      "forProduct": "68b58ae857418a2506384acd"
+    },
+    "returnInfo": {
+      "shipmentId": "946623765",
+      "orderId": "950191535",
+      "status": "RETURN PENDING"
+    },
+    "_id": "68b58a1c57418a2506384ac3",
+    "user": "6899ea996dbe89a7d53e2679",
+    "items": [
+      {
+        "product": "68982d04d9b0b7f2646e945b",
+        "color": "main",
+        "size": "L",
+        "priceAtPurchase": 540
+      }
+    ],
+    "totalAmount": 600,
+    "OrderId": "ORD-1756727836200-43093",
+    "affilator": "689f25831d1dd138b73a4e5f",
+    "status": "Exchanged",
+    "purchasedAt": "2025-09-01T11:57:16.202Z",
+    "createdAt": "2025-09-01T11:57:16.203Z",
+    "updatedAt": "2025-09-01T12:00:40.984Z",
+    "__v": 0,
+    "chanelOrderId": "950188154",
+    "courierBy": "Amazon Prepaid Surface 500g",
+    "shipmentId": "946620384",
+    "trackingCode": "363156141028"
+  },
+  "newOrder": {
+    "user": "6899ea996dbe89a7d53e2679",
+    "items": [
+      {
+        "product": "68982d04d9b0b7f2646e945b",
+        "color": "thekua",
+        "size": "M"
+      }
+    ],
+    "OrderId": "EXCH-1756728040584-48396",
+    "chanelOrderId": "950191537",
+    "shipmentId": "946623769",
+    "address": {
+      "houseNumber": "3240",
+      "street": "33 feet road",
+      "landmark": "pal general store",
+      "city": "Ludhiana",
+      "state": "punjab",
+      "country": "India",
+      "pincode": "141016"
+    },
+    "status": "Created",
+    "cancelled": {
+      "status": false
+    },
+    "wasExchanged": {
+      "status": true,
+      "forProduct": "68b58a1c57418a2506384ac3"
+    },
+    "exchanged": {
+      "status": "none"
+    },
+    "returnInfo": {
+      "createdAt": "2025-09-01T12:00:40.966Z"
+    },
+    "_id": "68b58ae857418a2506384acd",
+    "purchasedAt": "2025-09-01T12:00:40.966Z",
+    "createdAt": "2025-09-01T12:00:40.968Z",
+    "updatedAt": "2025-09-01T12:00:40.968Z",
+    "__v": 0
+  }
+}

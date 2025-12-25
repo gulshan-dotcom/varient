@@ -1,0 +1,159 @@
+.quill {
+  background: white;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.ql-toolbar {
+  border-bottom: 2px solid #e2e8f0 !important;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.ql-container {
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  min-height: 120px;
+}
+
+.ql-editor:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.editor-container {
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  background: white;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+.editor-toolbar {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  border-bottom: 2px solid #e2e8f0;
+  background: #f8fafc;
+}
+
+.editor-toolbar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #374151;
+  padding: 8px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.editor-toolbar button:hover {
+  background: #e2e8f0;
+}
+
+.editor-toolbar button.active {
+  background: #667eea;
+  color: white;
+}
+
+.link-input-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.link-input {
+  padding: 8px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  width: 150px;
+  transition: all 0.3s ease;
+}
+
+.link-input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.editor-content {
+  padding: 20px;
+  min-height: 120px;
+  font-size: 1rem;
+  color: #1a202c;
+}
+
+.editor-content:focus {
+  outline: none;
+}
+
+/* Tiptap ProseMirror styles */
+.ProseMirror {
+  outline: none;
+}
+
+.ProseMirror p.is-editor-empty:first-child::before {
+  content: 'Start typing...';
+  color: #6b7280;
+  float: left;
+  pointer-events: none;
+  height: 0;
+}
+
+/* tiptap base styles */
+.ProseMirror {
+  outline: none;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding: 8px;
+  min-height: 200px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.ProseMirror h3 {
+  font-size: 1.4rem;
+  margin: 1em 0 0.5em;
+}
+
+.ProseMirror h2 {
+  font-size: 1.4rem;
+  margin: 1em 0 0.5em;
+}
+
+.ProseMirror ul,
+.ProseMirror ol {
+  margin-left: 1.5rem;
+  padding-left: 1rem;
+}
+
+.ProseMirror ol li {
+  list-style: decimal;
+}
+
+.ProseMirror ul li {
+  list-style: disc;
+  margin: 4px 0;
+}
+
+.editor-content table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0;
+}
+.editor-content th,
+.editor-content td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+.editor-content th {
+  background-color: #f2f2f2;
+}

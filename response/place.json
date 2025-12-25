@@ -1,0 +1,134 @@
+{
+  "success": true,
+  "message": "Order placed, courier assigned, invoice generated",
+  "order": {
+    "user": "6899ea996dbe89a7d53e2679",
+    "items": [
+      {
+        "product": "68982d04d9b0b7f2646e945b",
+        "color": "main",
+        "size": "L",
+        "priceAtPurchase": 600
+      }
+    ],
+    "totalAmount": 600,
+    "OrderId": "ORD-1756726481666-57372",
+    "address": {
+      "houseNumber": "3240",
+      "street": "33 feet road",
+      "landmark": "pal general store",
+      "city": "Ludhiana",
+      "state": "punjab",
+      "country": "India",
+      "pincode": "141016"
+    },
+    "affilator": "689f25831d1dd138b73a4e5f",
+    "status": "Created",
+    "cancelled": {
+      "status": false
+    },
+    "wasExchanged": {
+      "status": false
+    },
+    "exchanged": {
+      "status": "none"
+    },
+    "returnInfo": {
+      "createdAt": "2025-09-01T11:34:41.675Z"
+    },
+    "_id": "68b584d157418a2506384aa3",
+    "purchasedAt": "2025-09-01T11:34:41.675Z",
+    "createdAt": "2025-09-01T11:34:41.683Z",
+    "updatedAt": "2025-09-01T11:34:46.177Z",
+    "__v": 0,
+    "shipmentId": "946595684",
+    "chanelOrderId": "950163445",
+    "courierBy": "Amazon Prepaid Surface 500g",
+    "trackingCode": "363155774043"
+  },
+  "shiprocket": {
+    "order": {
+      "order_id": 950163445,
+      "channel_order_id": "ORD-1756726481666-57372",
+      "shipment_id": 946595684,
+      "status": "NEW",
+      "status_code": 1,
+      "onboarding_completed_now": 0,
+      "awb_code": "",
+      "courier_company_id": "",
+      "courier_name": "",
+      "new_channel": false,
+      "packaging_box_error": ""
+    },
+    "courier": {
+      "awb_assign_status": 1,
+      "response": {
+        "data": {
+          "courier_company_id": 142,
+          "awb_code": "363155774043",
+          "cod": 0,
+          "order_id": 950163445,
+          "shipment_id": 946595684,
+          "awb_code_status": 1,
+          "assigned_date_time": {
+            "date": "2025-09-01 17:04:44.000000",
+            "timezone_type": 3,
+            "timezone": "Asia/Kolkata"
+          },
+          "applied_weight": 0.5,
+          "company_id": 5725500,
+          "courier_name": "Amazon Prepaid Surface 500g",
+          "child_courier_name": null,
+          "freight_charges": 41,
+          "pickup_scheduled_date": "2025-09-03 11:00:00",
+          "routing_code": "",
+          "rto_routing_code": null,
+          "invoice_no": "Retail00006",
+          "transporter_id": "",
+          "transporter_name": "",
+          "shipped_by": {
+            "shipper_company_name": "Gulshan ",
+            "shipper_address_1": "85, street  1 2",
+            "shipper_address_2": "Simran palace, gilla girls school",
+            "shipper_city": "Ludhiana",
+            "shipper_state": "Punjab",
+            "shipper_country": "India",
+            "shipper_postcode": "141003",
+            "shipper_first_mile_activated": 0,
+            "shipper_phone": "9877037380",
+            "lat": "30.844289565829",
+            "long": "75.883622707124",
+            "shipper_email": "popzen2343@gmail.com",
+            "extra_info": {
+              "role": "Warehouse Helper",
+              "source": 1,
+              "open_time": "4:00 AM",
+              "close_time": "11:30 PM",
+              "select_days": "[\"Monday\",\"Wednesday\",\"Friday\",\"Sunday\"]",
+              "alternate_name": "",
+              "alternate_role": "",
+              "alternate_email": "",
+              "send_pickup_rto_updates": 0,
+              "delhivery_surface_stressed_clientware_id": "KARTROCKETSMALL SURFACE-Ludhiana-141003-Gulshan-5725500-9154640"
+            },
+            "rto_company_name": "Gulshan ",
+            "rto_address_1": "85, street  1 2",
+            "rto_address_2": "Simran palace, gilla girls school",
+            "rto_city": "Ludhiana",
+            "rto_state": "Punjab",
+            "rto_country": "India",
+            "rto_postcode": "141003",
+            "rto_phone": "9877037380",
+            "rto_email": "popzen2343@gmail.com"
+          }
+        }
+      },
+      "no_pickup_popup": 0,
+      "quick_pick": 0
+    },
+    "invoice": {
+      "message": "The GET method is not supported for this route. Supported methods: POST.",
+      "status_code": 405
+    }
+  }
+}

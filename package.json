@@ -1,0 +1,49 @@
+{
+  "name": "fsworld",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@remixicon/react": "^4.6.0",
+    "@tailwindcss/postcss": "^4.1.17",
+    "@tiptap/extension-table": "^3.0.7",
+    "@tiptap/extension-table-cell": "^3.0.7",
+    "@tiptap/extension-table-header": "^3.0.7",
+    "@tiptap/extension-table-row": "^3.0.7",
+    "@tiptap/extension-underline": "^3.0.7",
+    "@tiptap/react": "^3.0.7",
+    "@tiptap/starter-kit": "^3.0.7",
+    "@uploadthing/react": "^7.3.2",
+    "bcrypt": "^6.0.0",
+    "expo-linear-gradient": "^14.1.5",
+    "framer-motion": "^12.23.6",
+    "fuse.js": "^7.1.0",
+    "google-auth-library": "^10.2.0",
+    "jose": "^6.0.12",
+    "jsonwebtoken": "^9.0.2",
+    "lucide-react": "^0.555.0",
+    "mongoose": "^8.16.3",
+    "motion": "^12.23.6",
+    "next": "^15.5.9",
+    "next-auth": "^4.24.11",
+    "postcss": "^8.5.6",
+    "razorpay": "^2.9.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-hook-form": "^7.60.0",
+    "react-toastify": "^11.0.5",
+    "react-zoom-pan-pinch": "^3.7.0",
+    "swiper": "^11.2.10",
+    "tailwindcss": "^4.1.17"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.5"
+  }
+}

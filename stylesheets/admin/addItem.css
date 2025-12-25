@@ -1,0 +1,1013 @@
+main.adminAddItem {
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+main.adminAddItem .add-product-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  background: var(--bg-card);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow-medium);
+}
+
+main.adminAddItem .add-product-header h1 {
+  font-size: 2.5rem !important;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+main.adminAddItem .user-profile {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+main.adminAddItem .user-profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent-gold);
+}
+
+main.adminAddItem .user-profile span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+/* Form Sections */
+main.adminAddItem .form-section {
+  margin-bottom: 2.5rem;
+}
+
+main.adminAddItem .form-section h2 {
+  font-size: 1.8rem !important;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+/* Image Gallery */
+main.adminAddItem .image-gallery {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+main.adminAddItem .image-box {
+  width: 100px;
+  height: 100px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+main.adminAddItem .image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+main.adminAddItem .image-box.add-image {
+  display: flex;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+main.adminAddItem .image-box svg {
+  width: 32px;
+  height: 32px;
+  color: var(----accent-emerald-dark);
+}
+
+main.adminAddItem .image-box:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-soft);
+  border-color: var(--accent-emerald);
+}
+
+/* Product Title */
+main.adminAddItem .title-input {
+  width: 200px;
+  padding: 0.75rem;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  font-size: 1rem !important;
+  color: var(--text-primary);
+  background: var(--bg-card);
+  transition: all 0.3s ease;
+}
+
+main.adminAddItem .title-input:focus {
+  border-color: var(--accent-emerald);
+  box-shadow: 0 0 0 3px rgba(115, 213, 232, 0.2);
+  outline: none;
+}
+
+main.adminAddItem .title-input::placeholder {
+  color: var(--text-primary);
+}
+
+/* Price Fields */
+main.adminAddItem .price-fields {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+main.adminAddItem .price-input {
+  width: 200px;
+  padding: 0.75rem;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  font-size: 1rem;
+  color: var(--text-primary);
+  background: var(--bg-card);
+  transition: all 0.3s ease;
+}
+
+main.adminAddItem .price-input:focus {
+  border-color: var(--accent-emerald);
+  box-shadow: 0 0 0 3px rgba(115, 213, 232, 0.2);
+  outline: none;
+}
+
+main.adminAddItem .price-input::placeholder {
+  color: var(--text-primary);
+}
+
+/* Textareas */
+textarea {
+  width: 100%;
+  min-height: 150px;
+  padding: 1rem;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  font-size: 1rem;
+  color: var(--text-primary);
+  background: var(--bg-card);
+  resize: vertical;
+  transition: all 0.3s ease;
+}
+
+textarea:focus {
+  border-color: var(--accent-emerald);
+  box-shadow: 0 0 0 3px rgba(115, 213, 232, 0.2);
+  outline: none;
+}
+
+textarea::placeholder {
+  color: var(--text-primary);
+}
+
+/* Colors */
+main.adminAddItem .color-selection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main.adminAddItem .color-input {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+main.adminAddItem .color-input input {
+  padding: 0.75rem;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  font-size: 1rem;
+  color: var(--text-primary);
+  background: var(--bg-card);
+  width: 150px;
+  transition: all 0.3s ease;
+}
+
+main.adminAddItem .color-input input:focus {
+  border-color: var(--accent-emerald);
+  box-shadow: 0 0 0 3px rgba(115, 213, 232, 0.2);
+  outline: none;
+}
+
+main.adminAddItem .add-color-btn {
+  background: var(--accent-emerald);
+  color: var(--primary-light);
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+main.adminAddItem .add-color-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+main.adminAddItem .add-color-btn:hover {
+  background: var(--accent-gold);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-soft);
+}
+
+main.adminAddItem .color-box {
+  width: 100px;
+  height: 100px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+main.adminAddItem .color-box svg {
+  width: 32px;
+  height: 32px;
+  color: var(----accent-emerald-dark);
+}
+
+main.adminAddItem .color-box:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-soft);
+  border-color: var(--accent-emerald);
+}
+
+/* Sizes */
+main.adminAddItem .size-selection {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+main.adminAddItem .size-btn {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  background: var(--bg-card);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+main.adminAddItem .size-btn.selected {
+  border-color: var(--accent-gold);
+  background: var(--accent-gold);
+  color: var(--primary-light);
+  box-shadow: var(--glow-gold);
+}
+
+main.adminAddItem .size-btn.selected::after {
+  content: "✓";
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--primary-light);
+}
+
+main.adminAddItem .size-btn:hover {
+  border-color: var(--accent-emerald);
+  box-shadow: var(--shadow-soft);
+}
+
+main.adminAddItem .size-input {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+main.adminAddItem .size-input input {
+  padding: 0.75rem;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  font-size: 1rem;
+  color: var(--text-primary);
+  background: var(--bg-card);
+  width: 150px;
+  transition: all 0.3s ease;
+}
+
+main.adminAddItem .size-input input:focus {
+  border-color: var(--accent-emerald);
+  box-shadow: 0 0 0 3px rgba(115, 213, 232, 0.2);
+  outline: none;
+}
+
+main.adminAddItem .add-size-btn {
+  background: var(--accent-emerald);
+  color: var(--primary-light);
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+main.adminAddItem .add-size-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+main.adminAddItem .add-size-btn:hover {
+  background: var(--accent-gold);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-soft);
+}
+
+/* Category Selection */
+main.adminAddItem .category-selection {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+main.adminAddItem .custom-dropdown {
+  position: relative;
+  width: 200px;
+}
+
+main.adminAddItem .remove-btn {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 24px;
+  height: 24px;
+  background: var(--primary-light);
+  border: 2px solid var(----accent-emerald-dark);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+  opacity: 1; /* Always visible */
+}
+
+main.adminAddItem .remove-btn svg {
+  width: 14px;
+  height: 14px;
+  color: var(----accent-emerald-dark);
+}
+
+main.adminAddItem .remove-btn:hover {
+  background: var(--accent-emerald);
+  border-color: var(--accent-emerald);
+  transform: scale(1.1);
+}
+
+main.adminAddItem .remove-btn:hover svg {
+  color: var(--accent-gold);
+}
+
+main.adminAddItem .category-select {
+  padding: 0.75rem;
+  border: 1px solid var(--accent-emerald);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  background: var(--bg-card);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+
+main.adminAddItem .image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+main.adminAddItem .image-box {
+  width: 100px;
+  position: relative;
+}
+
+main.adminAddItem .image-box img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+main.adminAddItem .image-box.add-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border: 2px dashed #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #fafafa;
+  transition: background 0.2s ease;
+}
+
+main.adminAddItem .image-box.add-image:hover {
+  background: #f0f0f0;
+}
+
+main.adminAddItem .remove-btn {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+main.adminAddItem .remove-btn:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+main.adminAddItem .custom-upload-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  background-color: #f0f0f0 !important;
+  border: 1px solid #ddd;
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  gap: 8px;
+  transition: background-color 0.2s;
+}
+
+main.adminAddItem .custom-upload-btn:hover {
+  background-color: #e0e0e0;
+}
+
+main.adminAddItem .custom-upload-btn.uploading {
+  background-color: #d3d3d3;
+  cursor: not-allowed;
+}
+
+main.adminAddItem .custom-upload-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+main.adminAddItem .color-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+main.adminAddItem .delete-color-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #ff4d4d;
+  transition: color 0.2s;
+}
+
+main.adminAddItem .delete-color-btn:hover {
+  color: #cc0000;
+}
+
+main.adminAddItem .delete-color-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+main.adminAddItem .color-input {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+main.adminAddItem .color-input input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+main.adminAddItem .add-color-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  background-color: #4f46e5;
+  color: white;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+main.adminAddItem .add-color-btn:hover {
+  background-color: #4338ca;
+}
+
+/* Custom Dropzone */
+
+/* Upload Box */
+main.adminAddItem .image-box.add-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border: 2px dashed #aaa;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #f9f9f9;
+  transition: background 0.25s ease;
+}
+
+main.adminAddItem .image-box.add-image:hover {
+  background: #f0f0f0;
+}
+
+/* Upload Dropzone Button */
+main.adminAddItem .custom-dropzone-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Upload SVG Icon */
+main.adminAddItem .add-image-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: #5d2be7;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+main.adminAddItem .add-image-content svg {
+  width: 28px;
+  height: 28px;
+  color: inherit;
+}
+
+/* Progress Bar (Dynamic Width) */
+main.adminAddItem .custom-dropzone-button::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: var(--progress-width, 0%);
+  background-color: #5d2be7;
+  transition: width 0.4s ease;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+/* Allowed Content Hide */
+[data-ut-element="allowed-content"] {
+  display: none !important;
+}
+
+/* Hidden Input */
+main.adminAddItem input[type="file"].sr-only {
+  display: none;
+}
+
+/* Tags */
+main.adminAddItem .tags-selection {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+main.adminAddItem .tag-btn {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  background: var(--bg-card);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+main.adminAddItem .tag-btn.selected {
+  border-color: var(--accent-gold);
+  background: var(--accent-gold);
+  color: var(--primary-light);
+  box-shadow: var(--glow-gold);
+}
+
+main.adminAddItem .tag-btn.selected::after {
+  content: "✓";
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--primary-light);
+}
+
+main.adminAddItem .tag-btn:hover {
+  border-color: var(--accent-emerald);
+  box-shadow: var(--shadow-soft);
+}
+
+main.adminAddItem .tag-input {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+main.adminAddItem .tag-input input {
+  padding: 0.75rem;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  font-size: 1rem;
+  color: var(--text-primary);
+  background: var(--bg-card);
+  width: 150px;
+  transition: all 0.3s ease;
+}
+
+main.adminAddItem .tag-input input:focus {
+  border-color: var(--accent-emerald);
+  box-shadow: 0 0 0 3px rgba(115, 213, 232, 0.2);
+  outline: none;
+}
+
+main.adminAddItem .add-tag-btn {
+  background: var(--accent-emerald);
+  color: var(--primary-light);
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+main.adminAddItem .add-tag-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+main.adminAddItem .add-tag-btn:hover {
+  background: var(--accent-gold);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-soft);
+}
+
+/* Toggle */
+main.adminAddItem .stock-toggle,
+main.adminAddItem .shining-toggle {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+main.adminAddItem .toggle-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+main.adminAddItem .toggle-switch {
+  position: relative;
+  width: 60px;
+  height: 34px;
+}
+
+main.adminAddItem .toggle-switch input {
+  display: none;
+}
+
+main.adminAddItem .toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--text-secondary);
+  border-radius: 34px;
+  transition: all 0.3s ease;
+}
+
+main.adminAddItem .toggle-slider::before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background: var(--primary-light);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+main.adminAddItem .toggle-switch input:checked + .toggle-slider {
+  background: var(--accent-emerald);
+}
+
+main.adminAddItem .toggle-switch input:checked + .toggle-slider::before {
+  transform: translateX(26px);
+}
+
+/* Submit Button */
+main.adminAddItem .submit-btn {
+  background: var(--accent-emerald);
+  color: var(--primary-light);
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  margin-left: auto;
+}
+
+main.adminAddItem .submit-btn svg {
+  width: 22px;
+  height: 22px;
+}
+
+main.adminAddItem .submit-btn:hover {
+  background: var(--accent-gold);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-large);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  main.adminAddItem .image-gallery,
+  main.adminAddItem .price-fields,
+  main.adminAddItem .size-selection,
+  main.adminAddItem .tags-selection,
+  main.adminAddItem .category-selection {
+    flex-direction: row;
+    gap: 0.75rem;
+  }
+
+  main.adminAddItem .custom-dropdown,
+  main.adminAddItem .price-input,
+  main.adminAddItem .title-input,
+  main.adminAddItem .category-input input,
+  main.adminAddItem .size-input input,
+  main.adminAddItem .tag-input input,
+  main.adminAddItem .color-input input {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+.video-thumbnail {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.video-thumbnail video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  filter: brightness(0.8);
+}
+
+.play-icon-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  main.adminAddItem .main-content {
+    padding: 1.5rem;
+  }
+
+  main.adminAddItem .add-product-header {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  main.adminAddItem .add-product-header h1 {
+    font-size: 1.9rem !important;
+  }
+
+  main.adminAddItem .form-section h2 {
+    font-size: 1.6rem !important;
+  }
+
+  main.adminAddItem .image-gallery,
+  main.adminAddItem .price-fields,
+  main.adminAddItem .size-selection,
+  main.adminAddItem .tags-selection,
+  main.adminAddItem .category-selection {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  main.adminAddItem .image-box,
+  main.adminAddItem .color-box {
+    width: 80px;
+    height: 80px;
+  }
+
+  main.adminAddItem .image-box img {
+    width: 100%;
+    height: 100%;
+  }
+
+  main.adminAddItem .image-box svg,
+  main.adminAddItem .color-box svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  textarea {
+    min-height: 120px;
+  }
+
+  main.adminAddItem .custom-dropdown,
+  main.adminAddItem .price-input,
+  main.adminAddItem .title-input,
+  main.adminAddItem .category-input input,
+  main.adminAddItem .size-input input,
+  main.adminAddItem .tag-input input,
+  main.adminAddItem .color-input input {
+    max-width: 100%;
+  }
+
+  main.adminAddItem .submit-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  main.adminAddItem .main-content {
+    padding: 1rem;
+  }
+
+  main.adminAddItem .add-product-header h1 {
+    font-size: 1.7rem !important;
+  }
+
+  main.adminAddItem .user-profile img {
+    width: 32px;
+    height: 32px;
+  }
+
+  main.adminAddItem .user-profile span {
+    font-size: 0.9rem;
+  }
+
+  main.adminAddItem .form-section h2 {
+    font-size: 1.4rem !important;
+  }
+
+  main.adminAddItem .image-box,
+  main.adminAddItem .color-box {
+    width: 70px;
+    height: 70px;
+  }
+
+  main.adminAddItem .image-box img {
+    width: 100%;
+    height: 100%;
+  }
+
+  main.adminAddItem .image-box svg,
+  main.adminAddItem .color-box svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  textarea,
+  main.adminAddItem .price-input,
+  main.adminAddItem .title-input,
+  main.adminAddItem .category-input input,
+  main.adminAddItem .size-input input,
+  main.adminAddItem .tag-input input,
+  main.adminAddItem .color-input input {
+    font-size: 0.95rem;
+  }
+
+  main.adminAddItem .custom-dropdown-selected,
+  main.adminAddItem .custom-dropdown-options div {
+    font-size: 0.95rem;
+  }
+
+  main.adminAddItem .add-category-btn,
+  main.adminAddItem .tag-btn,
+  main.adminAddItem .add-tag-btn,
+  main.adminAddItem .size-btn,
+  main.adminAddItem .add-size-btn,
+  main.adminAddItem .add-color-btn,
+  main.adminAddItem .submit-btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+
+  main.adminAddItem .toggle-switch {
+    width: 50px;
+    height: 30px;
+  }
+
+  main.adminAddItem .toggle-slider::before {
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 4px;
+  }
+
+  main.adminAddItem .toggle-switch input:checked + .toggle-slider::before {
+    transform: translateX(20px);
+  }
+}

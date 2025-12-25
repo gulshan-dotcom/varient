@@ -1,0 +1,144 @@
+
+/* Container */
+.banner-page {
+  background: var(--primary-light);
+  min-height: 100vh;
+  padding: 2rem;
+  color: var(--text-primary);
+  font-family: "Inter", sans-serif;
+}
+
+/* Title */
+.banner-title {
+  font-size: 2rem !important;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Form Card */
+.banner-form {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-soft);
+  border-radius: 12px;
+  padding: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.banner-form input {
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  color: var(--text-primary);
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.banner-form input:focus {
+  border-color: var(--accent-emerald);
+  box-shadow: 0 0 0 3px rgba(115, 213, 232, 0.3);
+  outline: none;
+}
+
+.banner-form button {
+  background: var(----accent-emerald-dark);
+  color: var(--primary-light);
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.banner-form button:hover {
+  background: #5b21b6;
+}
+
+.banner-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Banner Grid */
+.banner-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Banner Card */
+.banner-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.banner-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-medium);
+}
+
+.banner-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.banner-info {
+  padding: 1rem;
+}
+
+.banner-info h2 {
+  font-size: 1.1rem !important;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.banner-info a {
+  color: var(--accent-emerald);
+  text-decoration: none;
+  font-size: 0.9rem;
+  word-break: break-all;
+}
+
+.banner-info a:hover {
+  text-decoration: underline;
+}
+
+.banner-info button {
+  margin-top: 0.75rem;
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.banner-info button:hover {
+  background: #dc2626;
+}
+
+/* Empty State */
+.no-banner {
+  text-align: center;
+  color: var(--text-primary);
+  font-size: 1rem;
+  padding: 2rem;
+}

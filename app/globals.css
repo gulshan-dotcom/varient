@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+:root {
+  --primary-dark: #1e1e1e;
+  --primary-light: #e5faf3;
+  --bg-card: #ffffff;
+  --accent-emerald: #059669;
+  --accent-emerald-dark: #122620;
+  --accent-gold: #D6AD60;
+  --accent-gold-dark: #9e7933;
+  --text-primary: #0a1612;
+  --text-secondary: #647e76;
+  --border-light: #a2b1ac;
+  --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-medium: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-large: 0 20px 25px -5px rgba(0, 0, 0, 0.15),
+    0 10px 10px -5px rgba(0, 0, 0, 0.1);
+  --success-green: #28a772;
+  --danger-red: #db4949;
+  --skeleton-base: #e0e0e0;
+  --skeleton-highlight: rgba(255, 255, 255, 0.6);
+  --skeleton-secondary: #b4b4b4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--primary-light);
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 2.25rem !important; /* same as text-4xl */
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 1.5rem !important; /* same as text-2xl */
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.25rem !important; /* same as text-xl */
+  font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+.add-product-btn,
+.action-btn,
+.overview-card h3 {
+  font-size: auto;
+  font-family: var(--font-exo), sans-serif;
+}
+
+.overview-card p,
+.product-card-content p {
+  font-family: "Playfair Display", serif;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  min-height: 50px;
+  min-width: 50px;
+  border-radius: 50%;
+  background-color: #88909e91;
+  transition: all 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: #cfd6e2d8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: #52b395;
+  font-size: 1.5rem !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #52b395 !important;
+}
+
+.container {
+  max-width: 1400px !important;
+  margin: 0 auto;
+  padding: 0 2rem;
+}

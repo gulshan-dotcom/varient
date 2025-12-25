@@ -1,0 +1,56 @@
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+  padding: 0 1rem;
+}
+
+.font-exo {
+  font-family: var(--font-exo), sans-serif;
+}
+
+.scroll-shadow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  background: var(--bg-card);
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 2px solid #d3d3d3;
+  box-shadow: 4px 4px 0 #d3d3d3;
+  transition: all 0.3s ease;
+  min-width: 140px;
+  max-width: 180px;
+  scroll-snap-align: start;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--text-primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.scroll-shadow.active {
+  border: 2px solid #fbc886;
+}
+
+.scroll-shadow:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 6px 6px 0 #d3d3d3;
+  background: #fff8e7;
+}
+
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 0.5rem;
+  }
+}
