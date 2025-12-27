@@ -10,14 +10,38 @@ import "@/stylesheets/user/subcategory.css";
 import Link from "next/link";
 
 export default function SubCategoryPage() {
-  const { products, categories } = useData();
+  const { categories } = useData();
   const router = useRouter();
   const searchParams = useSearchParams();
+  const [products, setProducts] = useState([]);
   const categoryParam = searchParams.get("category");
   const subcategoryParam = searchParams.get("subcategory");
 
   const [activeCategory, setActiveCategory] = useState(null);
   const [activeSubcategory, setActiveSubcategory] = useState({ name: "All" });
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      let categoryMap = {};
+      categoryMap[activeCategory._id] = 30;
+      console.log(categoryParam);
+      const res = await fetch("/api/user/products/by-category", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          categoryMap,
+        }),
+      });
+
+      const data = await res.json();
+      if (data.success) {
+        setProducts(data.data);
+      }
+    };
+    if (activeCategory) {
+      fetchProducts();
+    }
+  }, [activeCategory]);
 
   useEffect(() => {
     if (categories.length > 0) {

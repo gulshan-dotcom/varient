@@ -184,7 +184,7 @@
 
 /* Products */
 .products {
-  padding: 4rem 0;
+  padding: 2rem 0;
 }
 
 .product-grid {
@@ -194,7 +194,6 @@
   margin-top: 1rem;
   padding: 0 1rem;
 }
-
 
 .product-card {
   background: var(--bg-card);
@@ -546,7 +545,7 @@
 }
 
 .skeleton::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -150%;

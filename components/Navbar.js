@@ -9,16 +9,13 @@ import "@/stylesheets/navbar.css";
 
 const Navbar = () => {
   const { data: session, status } = useSession();
-  const { dbUser, products, isAdmin, categories } = useData();
-  const cartLength = dbUser?.cartList?.filter((id) =>
-    products.some((product) => product._id === id)
-  ).length;
+  const { dbUser, isAdmin, categories } = useData();
+  const cartLength = dbUser?.cart?.length;
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
   const menuVariants = {
     closed: {
       opacity: 0,
@@ -40,13 +37,18 @@ const Navbar = () => {
 
   return (
     <header className="header">
-      <nav className="nav-container" onBlur={()=> {setIsMenuOpen(false);}}>
+      <nav
+        className="nav-container"
+        onBlur={() => {
+          setIsMenuOpen(false);
+        }}
+      >
         <Link href="/" className="logo">
           <Image
             width={150}
             height={50}
             src="/images/logo.png"
-            alt="TFW Logo"
+            alt="Varient Logo"
           />
         </Link>
 
@@ -153,7 +155,7 @@ const Navbar = () => {
                     ></path>
                   </g>
                 </svg>
-                {1 > 0 && (
+                {!session && (
                   <span className="cart-count absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full px-2 py-1">
                     {1}
                   </span>

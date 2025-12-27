@@ -30,7 +30,7 @@ const Page = () => {
                 width={180}
                 height={100}
                 src="/images/logo.png"
-                alt="TFW Logo"
+                alt="Varients"
                 className="mx-auto rounded-md border-amber-600"
               />
             </div>

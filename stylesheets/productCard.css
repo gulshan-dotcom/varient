@@ -57,12 +57,12 @@
   left: 0.75rem;
   background: linear-gradient(
     135deg,
-    #a47e1b 0%,
+    #1ba46f 0%,
     #ffcc33 25%,
     #d1cfff 25%,
-    #fff4b0 50%,
-    #c1f0f6 50%,
-    #ffd1dc 0%,
+    #b0ffb7 50%,
+    #c1f6e0 50%,
+    #d1faff 0%,
     #ffcc33 75%,
     #a47e1b 100%
   );
@@ -122,6 +122,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
 }
 

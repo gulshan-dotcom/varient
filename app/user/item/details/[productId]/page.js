@@ -147,7 +147,6 @@ const Page = () => {
       productCategoryIds.map((id) => [id, 4])
     );
 
-    console.log(categoryMap, productCategoryIds, "category ");
     const fetchRecommendedProducts = async () => {
       const res = await fetch("/api/user/products/by-category", {
         method: "POST",
@@ -193,30 +192,27 @@ const Page = () => {
     setSizeQuantityModal(true);
   };
 
-  const confirmAction = async () => {
+  const confirmAction = () => {
     if (!selectedSize) {
       toast.error("Please select a size");
       return;
     }
     if (pendingAction === "cart") {
       addToCart(productId, currentVariant, selectedSize);
-    } else if (pendingAction === "buy") {
-      () => {
-        console.log("Buy Now clicked");
-        toast.info("Processing Buy Now...", {
-          position: "top-right",
-          autoClose: 3000,
-        });
+    }
+    if (pendingAction === "buy") {
+      toast.info("Processing Buy Now...", {
+        position: "top-right",
+        autoClose: 3000,
+      });
 
-        const query = new URLSearchParams({
-          productId,
-          color: currentVariant,
-          size: selectedSize,
-          quantity: quantity.toString(),
-        }).toString();
-
-        router.push(`/user/item/order?${query}`);
-      };
+      const query = new URLSearchParams({
+        productId,
+        color: currentVariant,
+        size: selectedSize,
+        quantity: quantity.toString(),
+      }).toString();
+      router.push(`/user/item/order?${query}`);
     }
     setSizeQuantityModal(false);
     setSelectedSize(null);
@@ -359,7 +355,7 @@ const Page = () => {
 
           {/* Product Info */}
           <div className="product-info">
-            <p className="product-brand">TFW</p>
+            <p className="product-brand">Varient's</p>
             <h1 className="product-title">
               {product.title || "Premium Silk Saree"}
             </h1>
@@ -438,7 +434,6 @@ const Page = () => {
                 onClick={() => openSizeQuantityModal("buy")}
                 className="buy-now"
                 data-action="buy-now"
-                disabled={!currentVariant || !selectedSize}
               >
                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path
@@ -543,7 +538,7 @@ const Page = () => {
               {currentImages.map((media, i) => (
                 <SwiperSlide
                   key={i}
-                  className="flex items-center justify-center"
+                  className="fulscreen-slide flex items-center justify-center"
                 >
                   {media.type === "video/mp4" ? (
                     <video
@@ -601,9 +596,9 @@ const Page = () => {
               onClick={(e) => e.stopPropagation()}
             >
               {/* Current Variant Preview Image */}
-              {currentMedia && (
+              {currentImages && (
                 <Image
-                  src={currentMedia.image}
+                  src={currentImages[0].image}
                   height={300}
                   width={300}
                   alt="Selected variant"
@@ -642,12 +637,23 @@ const Page = () => {
                 </label>
                 <div className="quantity-controls">
                   <button
+                    className="quantity-btn"
                     onClick={() => setQuantity(Math.max(1, quantity - 1))}
                   >
                     -
                   </button>
-                  <input type="text" value={quantity} readOnly />
-                  <button onClick={() => setQuantity(quantity + 1)}>+</button>
+                  <input
+                    className="quantity-input"
+                    type="text"
+                    value={quantity}
+                    readOnly
+                  />
+                  <button
+                    className="quantity-btn"
+                    onClick={() => setQuantity(quantity + 1)}
+                  >
+                    +
+                  </button>
                 </div>
               </div>
 
@@ -663,7 +669,7 @@ const Page = () => {
                   className="bg-gradient-to-r from-emerald-500 to-cyan-500 text-white"
                   onClick={confirmAction}
                 >
-                  {pendingAction === "cart" ? "Add to Cart" : "Buy Now"}
+                  {pendingAction === "cart" ? "Add to Cart" : "Continue"}
                 </button>
               </div>
             </motion.div>

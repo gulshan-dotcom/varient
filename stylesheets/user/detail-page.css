@@ -289,6 +289,12 @@
   color: var(--text-secondary);
 }
 
+.fulscreen-slide{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
 .quantity-controls {
   display: flex;
   align-items: center;
@@ -825,7 +831,7 @@
 .zoom-panel img,
 .zoom-panel video {
   max-width: 95vw;
-  max-height: 95vh;
+  max-height: 80vh;
   object-fit: contain;
   border-radius: 12px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
@@ -834,7 +840,7 @@
 /* Close button for zoom panel */
 .zoom-close {
   position: absolute;
-  top: 2rem;
+  top: 100px;
   right: 2rem;
   width: 50px;
   height: 50px;
